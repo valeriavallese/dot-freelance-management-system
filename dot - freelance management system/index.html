@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>DOT</title>
+  </head>
+
+  <body>
+    
+    <nav class="navbar bg-white sticky-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">D.O.T.</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <input class="form-control mr-sm-2" type="text" placeholder="Search here" aria-label="Search">
+        
+        <ul>
+          <img src="/img/user.jpg" id="user" alt="user">
+          <li><p>John Doe</p></li>
+          <li>  <p>Super Admin</p></li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+          <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+            <div class="sidebar-sticky pt-3">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">
+                    <i class="fa-solid fa-igloo"></i>
+                    <span data-feather="home"></span>
+                    Dashboard <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fa-solid fa-users"></i>
+                    <span data-feather="file"></span>
+                    Customers
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                    <span data-feather="shopping-cart"></span>
+                    Projects
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span data-feather="users"></span>
+                    Orders
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fa-solid fa-receipt"></i>
+                    <span data-feather="bar-chart-2"></span>
+                    Files to print
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <span data-feather="layers"></span>
+                    Account
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fa-solid fa-list-check"></i>
+                    <span data-feather="layers"></span>
+                    Tasks
+                  </a>
+                </li>
+              </ul>
+      
+              
+              </ul>
+            </div>
+          </nav>
+
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+              <h1 class="h2">Dashboard</h1>
+            </div>
+      
+           
+            <div class="row row-main">
+              <div class="col-3">
+                <div class="card" style="width: 14rem;">
+                  <div class="card-body">
+                    <h4 class="card-title">54</h4>
+                    <i class="fa-solid fa-users fa-2xl icon"></i>
+                    <h6 class="card-subtitle mb-2 text-muted">Workers</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-3">
+                <div class="card" style="width: 14rem;">
+                  <div class="card-body">
+                    <h4 class="card-title">79</h4>
+                    <i class="fa-solid fa-clipboard-list fa-2xl icon"></i>
+                    <h6 class="card-subtitle mb-2 text-muted">Projects</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-3">
+                <div class="card" style="width: 14rem;">
+                  <div class="card-body">
+                    <h4 class="card-title">120</h4>
+                    <i class="fa-solid fa-bag-shopping fa-2xl icon"></i>
+                    <h6 class="card-subtitle mb-2 text-muted">Orders</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-3">
+                <div class="card card-progress" style="width: 14rem;">
+                  <div class="card-body">
+                    <h4 class="card-title">58</h4>
+                    <i class="fa-solid fa-business-time fa-2xl icon icon-time"></i>
+                    <h6 class="card-subtitle mb-2 text-muted">"in progress"</h6>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <!--TABLE--> 
+        
+        <h3>Recent Projects</h3>
+        <button type="button" class="btn btn-danger btn-lg see-all">See All <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="table-responsive">
+              <table class="table table-striped table-lg">
+                <thead>
+                  <tr>
+                    <th>Project Title</th>
+                    <th>Workers</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Octopus</td>
+                    <td>Maria Rossi</td>
+                    <td><i class="fa-solid fa-circle" style="color: #45d411;"></i> Review</td>
+                  </tr>
+                  <tr>
+                    <td>Gioielleria</td>
+                    <td>Rosa Carlini</td>
+                    <td><i class="fa-solid fa-circle" style="color: #fdb212;"></i> In Progress</td>
+                  </tr>
+                  <tr>
+                    <td>Editore</td>
+                    <td>Maria Rossi</td>
+                    <td><i class="fa-solid fa-circle" style="color: #fd1212;"></i> Pending</td>
+                  </tr>
+                  <tr>
+                    <td>Paninoteca</td>
+                    <td>Giorgio G.</td>
+                    <td><i class="fa-solid fa-circle" style="color: #fdb212;"></i> In Progress</td>
+                  </tr>
+                  <tr>
+                    <td>Avv. Zanni</td>
+                    <td>Maria Rossi</td>
+                    <td><i class="fa-solid fa-circle" style="color: #45d411;"></i> Review</td>
+                  </tr>
+                  <tr>
+                    <td>Manniro B.</td>
+                    <td>Andrea Bucci</td>
+                    <td><i class="fa-solid fa-circle" style="color: #fd1212;"></i> Pending</td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+          
+          <div class="col-lg-4">
+            
+            <div class="table-responsive">
+              <table class="table table-striped table-lg">
+                <thead>
+                  <tr>
+                    <th>Workers</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img src="/img/woman.jpg" class="user-worker" alt="worker"></td>
+                    <td>
+                      <div class="btn-group">
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                          Maria Rossi
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">AVAIBLE: 6h</a>
+                          <a class="dropdown-item" href="#">WEEKLY HOURS: 40h</a>
+                          <a class="dropdown-item" href="#">ACTIVE PROJECTS: 4</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">END CONTRACT: 04/2025</a>
+                        </div>
+                      </div></td>
+                    <td><a href="#"><i class="fa-solid fa-circle-user" style="color: #E6413A; margin: 5px;"></i> <i class="fa-solid fa-envelope"  style="color: #E6413A; margin: 5px;"></i> <i class="fa-solid fa-phone" style="color: #E6413A; margin: 5px;"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td><img src="/img/male.jpg" class="user-worker" alt="worker"></td>
+                    <td><div class="btn-group">
+                      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        Giorgio G.
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">AVAIBLE: 6h</a>
+                        <a class="dropdown-item" href="#">WEEKLY HOURS: 40h</a>
+                        <a class="dropdown-item" href="#">ACTIVE PROJECTS: 4</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">END CONTRACT: 04/2025</a>
+                      </div>
+                    </div></td>
+                    <td><a href="#"><i class="fa-solid fa-circle-user" style="color: #E6413A; margin: 5px;"></i> <i class="fa-solid fa-envelope"  style="color: #E6413A; margin: 5px;"></i> <i class="fa-solid fa-phone" style="color: #E6413A; margin: 5px;"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td><img src="/img/woman.jpg" class="user-worker" alt="worker"></td>
+                    <td><div class="btn-group">
+                      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        Jennifer Brù
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">AVAIBLE: 6h</a>
+                        <a class="dropdown-item" href="#">WEEKLY HOURS: 40h</a>
+                        <a class="dropdown-item" href="#">ACTIVE PROJECTS: 4</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">END CONTRACT: 04/2025</a>
+                      </div>
+                    </div></td>
+                    <td><a href="#"><i class="fa-solid fa-circle-user" style="color: #E6413A; margin: 5px;"></i> <i class="fa-solid fa-envelope"  style="color: #E6413A; margin: 5px;"></i> <i class="fa-solid fa-phone" style="color: #E6413A; margin: 5px;"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td><img src="/img/male.jpg" class="user-worker" alt="worker"></td>
+                    <td><div class="btn-group">
+                      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        Andrea Bucci
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">AVAIBLE: 6h</a>
+                        <a class="dropdown-item" href="#">WEEKLY HOURS: 40h</a>
+                        <a class="dropdown-item" href="#">ACTIVE PROJECTS: 4</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">END CONTRACT: 04/2025</a>
+                      </div>
+                    </div></td>
+                    <td><a href="#"><i class="fa-solid fa-circle-user" style="color: #E6413A; margin: 5px;"></i> <i class="fa-solid fa-envelope"  style="color: #E6413A; margin: 5px;"></i> <i class="fa-solid fa-phone" style="color: #E6413A; margin: 5px;"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td><img src="/img/woman.jpg" class="user-worker" alt="worker"></td>
+                    <td><div class="btn-group">
+                      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        Rosa Carlini
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">AVAIBLE: 6h</a>
+                        <a class="dropdown-item" href="#">WEEKLY HOURS: 40h</a>
+                        <a class="dropdown-item" href="#">ACTIVE PROJECTS: 4</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">END CONTRACT: 04/2025</a>
+                      </div>
+                    </div></td>
+                    <td><a href="#"><i class="fa-solid fa-circle-user" style="color: #E6413A; margin: 5px;"></i> <i class="fa-solid fa-envelope"  style="color: #E6413A; margin: 5px;"></i> <i class="fa-solid fa-phone" style="color: #E6413A; margin: 5px;"></i></a></td>
+                  </tr>
+                  
+                 
+                  
+                </tbody>
+                 
+              </table>
+              
+            </div>
+          </div>
+        </div>
+       
+      </main>
+    </div>
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+   
+  </body>
+</html>
